@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "username": "sowmya",
+      "password": "sowmya@1"
+    },
+    {
+      "username": "shruthi",
+      "password": "shruthi@1"
+    },
+    {
+      "username": "chaitu",
+      "password": "chaitu@1"
+    },
+    {
+      "username": "gowtami",
+      "password": "gowtami@1"
+    },
+    {
+      "username": "alice",
+      "password": "alice@1"
+    },
+    {
+      "username": "bob",
+      "password": "bob@1"
+    },
+    {
+      "username": "john",
+      "password": "john@1"
+    },
+    {
+      "id": "56a6",
+      "username": "sowmya",
+      "password": "Sowmya@1"
+    },
+    {
+      "id": "e315",
+      "username": "chaitu",
+      "password": "chaitu@1"
+    }
+  ]
+}
+
+
