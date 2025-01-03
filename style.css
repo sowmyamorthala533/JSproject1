@@ -25,7 +25,7 @@
     background-color: green;
 } */ 
  /*cbe386797cdd903b2235cf394e67f722  api key*/
- :root{
+  :root{
     --primary-color:#17202a;
     --secondary-color:#273746;
     --light-gray-color:#ddd;
@@ -73,8 +73,8 @@
  .logo{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    /* flex-direction: column !important; */
+    justify-content: space-between; 
+    flex-direction: column !important; 
  }
  .logo h2 {
     margin-left: 0.3rem;
@@ -111,8 +111,8 @@
     justify-content: center;/*to come the arrows horizantally center*/
     height: 100vh;
     background-position: center center;/*background position of the image must be in center*/
-    background-size: cover;/*background size should be cover */
-    /*background-image: url("./img\ 1.webp");*/
+   background-size: cover;/*background size should be cover */
+    background-image: url("./img\ 1.webp");*/
     transition: all 0.5s ease-in-out; 
  }
  .menus.sticky{
@@ -301,7 +301,7 @@ button{
     padding: 0.5rem 0.5rem;
 } 
 .movies:hover .short-des{  /*i removed tvhover*/
-    transform: translateY(0%);
+   transform: translateY(0%);
     transition: all 0.5s ease-in;
 }
 .paginations{
@@ -330,4 +330,4 @@ button{
 }
 a{
     color: var(--brown-color);
-}
+} 
