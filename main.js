@@ -95,3 +95,14 @@ function showTvShows (tvShows){
   
   })
 }
+
+
+// hamburger menu section//
+// Select the hamburger icon and nav-links
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+// Add click event to toggle the "active" class
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
