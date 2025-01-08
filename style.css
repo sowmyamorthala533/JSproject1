@@ -208,7 +208,7 @@ button{
 .slider-content .movies_short_details{
     color: var(--white-color);
     padding: 1rem;
-    width: 50%;
+    width: 70%;
 }
 .slider-content .m_details{
     display: flex;
@@ -372,6 +372,8 @@ a{
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
     }
+
+    
 /* paginations*/
 
     /* Prevent horizontal scroll */
@@ -488,6 +490,27 @@ a{
     }
     .movies-details{
         margin-left: 25px;
+    }
+
+    .slider-content .movies_short_details{
+        color: var(--white-color);
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .slider-content button{
+        padding: 0.7rem 2rem;
+        outline: none;
+        border: none;
+        margin: 1rem 1rem;
+        background:var(--brown-color);
+        color:var(--white-color);
+        font-family: inherit;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
     }
 }
 
