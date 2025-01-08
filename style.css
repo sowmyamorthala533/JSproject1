@@ -376,7 +376,8 @@ a{
 
     /* Prevent horizontal scroll */
     body {
-        overflow-x: hidden; /* Hide horizontal scroll on body */
+        overflow-x: hidden; 
+     /* Hide horizontal scroll on body */
     }
 
     /* Adjusting pagination layout */
@@ -472,13 +473,7 @@ a{
   #menu-toggle{
     display: none;
   }
-
-
-
-
-
-
-    .slider-content{
+.slider-content{
        text-align: center;
        margin-left: 30px;
     }
