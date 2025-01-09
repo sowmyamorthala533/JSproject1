@@ -3,136 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider using HTML CSS &JS</title>
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./script.js"></script>
-    <script defer src="./main.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Register</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { max-width: 290px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
+        input { width: 100%; margin-bottom: 10px; padding: 8px; }
+        button { width: 100%; padding: 10px;background-color: green; }
+        label{margin: 10px;}
+    </style>
 </head>
 <body>
-    <div class="menus">
-        <div class="container">
-            <nav>
-                <a href="index.html">
-                    <div class="Logo">
-                        <img src="https://pngimg.com/d/letter_c_PNG72.png" alt="">
-                        <h2>ineVerse</h2>
-                    </div>
-                </a>
-                <form id="form">
-                    <input type="text" placeholder="Search Movies" id="search">
-                </form>
-                <!--hamburger-->
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <nav>
-                   <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#movies">Movies</a></li>
-                      <li><a href="tv_show.html">Tv Shows</a></li>
-                   </ul>
-                </nav>
-            </nav>
-        </div>
+    <div id="register-section">
+        <h2>Register</h2>
+        <form id="register-form">
+            <label>Username:</label>
+            <input type="text" id="register-username" placeholder="Username" required>
+            <label>Password:</label>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
     </div>
-    <header>
-        <div class="slider-container">
-            <div class="slide" style="background-image: url('./madmax.avif');"><!--first image we can also keep active it is optional-->
-                <div class="slider-content">
-
-                    <h2 class="movies-title">Mad Max</h2>
-                    <p class="movies_short_details">Zee is a feared contract killer known as "the Queen of the Dead," butwhen she refuses to murder a young blind woman, she finds herself hunted both by criminal colleagues.
-                    </p>
-                        <div class="m_details">
-                            <p class="category">Thriller</p>
-                            <p class="category">Crime</p>
-                            <p class="year">2024</p>
-                        </div>
-                        <button type="button"><i class='bx bx-caret-right-circle'>Watch Now</i></button>
-                </div>
-            </div>
-             <div class="slide" style="background-image: url('./kill.jpg');"><!--second image-->
-                <div class="slider-content">
-                    <h2 class="movies-title">KILL</h2>
-                    <p class="movies_short_details">In the land of Oz, ostracized and misunderstood green-skinned Elphaba isto share a room with the popular aristocrat and the two's unlikely friendship is tested. 
-                    </p>
-                        <div class="m_details">
-                            <p class="category">Drama</p>
-                            <p class="category">Romance</p> 
-                             <p class="year">2024</p>
-                        </div>
-                        <button type="button"><i class='bx bx-caret-right-circle'>Watch Now</i></button>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('./first\ omen.jpg');">
-                <div class="slider-content">
-                    <h2 class="movies-title">First Omen</h2>
-                    <p class="movies_short_details">Adult animated series of original short stories which are the worlds of beloved video games. Each episode serves as a gateway to a new adventure.
-                        <div class="m_details">
-                            <p class="category">Animation</p>
-                            <p class="category">Adventure</p>
-                            <p class="year">2024</p>
-                        </div>
-                        <button type="button"><i class='bx bx-caret-right-circle'>Watch Now</i></button>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('./dirty.jpg');"><!--fourth image-->
-                  <div class="slider-content">
-                    <h2 class="movies-title">Carry-On</h2>
-                    <p class="movies_short_details">An airport security officer races to outsmart a mysterious traveler forcing him a dangerous item slip onto a Christmas Eve flight.
-                    </p>
-                        <div class="m_details">
-                            <p class="category">Dangerous</p>
-                            <p class="category">Mistery</p>
-                            <p class="year">2024</p>
-                        </div>
-                        <button type="button"><i class='bx bx-caret-right-circle'>Watch Now</i></button>
-                </div>
-            </div>  
-            
-            <button class="arrow left-arrow" id="Left"><i class='bx bx-chevron-left'></i></button>
-            <button class="arrow right-arrow" id="right"><i class='bx bx-chevron-right'></i></button>
-        </div>
-    </header>
-    <div class="movies-content" id="movies">
-        <div class="container">
-            <h2 class="label">What's Popular</h2>
-            <div class="movies-details">
-                <!-- <div class="movies">
-                    <img src="./img 1.webp" alt="">
-                    <p class="movie-title">The Transporter</p>
-                    <div class="short-des">
-                       <p class="year">2024</p>
-                       <p class="rating">0.8</p>
-                    </div>
-                </div> -->
-                
-            </div>
-        </div>
-    </div>
-<!--pagination-->
-<div class="container">
-    <div class="paginations">
-        <ul>
-            <li>Previous</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>Next</li>
-        </ul>
-
-    </div>
-
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>

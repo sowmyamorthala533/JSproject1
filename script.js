@@ -66,14 +66,14 @@ loginForm.addEventListener("submit", async (e) => {
 
         if (isLocalUser || isServerUser) {
             alert("Login successful! Redirecting to main page...");
-            window.location.href = "index.html"; // Create a index.html for the next page
+            window.location.href = "homepage.html"; // Create a index.html for the next page
         } else {
             alert("Invalid username or password!");
         }
     } catch (error) {
         console.error(error);
         // alert("An error occurred during login. Please try again.");
-        window.location.href = "index.html";
+        window.location.href = "homepage.html";
     }
 });
 }
