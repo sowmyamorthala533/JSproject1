@@ -43,6 +43,20 @@ if (registerForm) {
     window.location.href = "login.html";
 });
 }
+//Guest Login
+document.addEventListener("DOMContentLoaded", function() {
+    const guestLogin = document.querySelector(".guestlogin");
+
+    if (guestLogin) {
+        guestLogin.addEventListener("click", function() {
+            console.log("Button Clicked! Redirecting..."); // Debugging
+            window.location.href = "homepage.html"; // Redirect on click
+        });
+    } else {
+        console.error("Guest login button not found!");
+    }
+});
+
 
 // Login functionality
 const loginForm = document.getElementById("login-form");

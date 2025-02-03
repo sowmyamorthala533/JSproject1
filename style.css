@@ -1,4 +1,4 @@
-/* *{
+ /*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -123,7 +123,7 @@
     height: 100vh;
    font-family: "poppins",sans-serif;
    background: var(--primary-color); 
- } 
+ }
   header::before{ /*Overlay Effect:fullscreen dark overlay using height: 100vh and width: 100%*/
     content:"";
     position:absolute;
@@ -140,7 +140,6 @@
     width: 70vw;
     position: relative;
     overflow: hidden;
-    
     border-radius: 5px;
 }
 .slide{ 
@@ -341,13 +340,16 @@ a{
     }
 
     .logo h2 {
-        font-size: 2rem;
+        font-size: 1rem;
+        margin-top: 10px;
+        display: none;
     }
-
+   
     #form input {
-        width: 170%;
+        width: 140%;
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
+        margin-left: 10px;
     }
 
     /*nav ul {
@@ -441,7 +443,7 @@ a{
     background-color:black;
     color: white;
     height: 2px;
-    width: 30px;
+    width: 40px;
 }
 #menu-toggle{
     display: none;
@@ -458,7 +460,7 @@ a{
      position: absolute;
      top: 100%;
      right: -4%;
-     /*background-color: #fff; */
+    background-color: transparent !important;
      z-index: 100;
    }
    nav ul{
@@ -466,7 +468,14 @@ a{
     }
     .hamburger{
         display: flex;
-        padding-left: 25%;
+        margin-left: 25%;
+        background-color: transparent !important;
+    }
+    .hamburger:focus,
+    .hamburger:active {
+        outline: none;
+        background-color: transparent;  
+        box-shadow: none;
     }
   .hamburger span{
     margin: 5px;
@@ -526,15 +535,14 @@ a{
     }
 
     #form input {
-        width: 80%;
+        width: 180%;
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
+       
     }
-
     nav ul {
         display: none;
     }
-
     .hamburger-menu {
         display: block;
         font-size: 2rem;
@@ -678,4 +686,5 @@ a{
     
 } 
 
- 
+
+
